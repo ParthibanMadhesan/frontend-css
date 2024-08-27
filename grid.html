@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           background-color: rgb(127,44,55);
+
+        }
+        .container{
+             display: grid;
+             /* grid-template-columns: 200px 200px 200px 200px auto; */
+             grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+             gap: 10px;
+
+        }
+        .para{
+            padding:1rem;
+            background-color: steelblue;
+            color:white;
+
+        }
+        .outerbox{
+           
+          
+           display: grid;
+           margin: 20px;
+           gap: 10px;
+           grid-template-columns: repeat(3,1fr);
+           grid-template-rows: 100px 200px;
+           grid-auto-rows: 200px;
+           align-items: end;
+           /* justify-content: center; */
+           justify-items:stretch ;
+        }
+        .box{
+
+          font-size: 4rem;
+          background-color: yellow;
+            color:black;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        /* .box1{
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+            /* grid-column: 1/3; */
+            /* grid-column: span 2; */
+            /* grid-row: span 2; }*/
+         
+         .box1{
+            justify-self: center;
+         }
+
+         .layout{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: 10vh 80vh  10vh;    
+            grid-template-areas:
+           " h    h  h h  h" 
+            "sb1  m  m  m   sb2"
+            "f    f f f   f"
+            ;
+         }
+
+         .layout div{
+            display: grid;
+            justify-content: center;
+            padding: 10px;
+            align-items: center;
+            border: 1px solid black;
+            background-color: aqua;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+         }
+         .header{
+            grid-area: h;
+            /* height: 10vh;*/
+         } 
+        .sidebar1{
+            grid-area: sb1;
+            /* height: 80vh; */
+        }
+        .sidebar2{
+            grid-area: sb2;
+            /* height: 80vh; */
+        }
+        .maincontent{
+            grid-area: m;
+            /* height: 80vh; */
+        }
+        .footer{
+            grid-area: f;
+            /* height: 10vh; */
+        }
+     
+    </style>
+</head>
+<body>
+
+    <div class="layout">
+        <div class="header">header</div>
+        <div class="sidebar1">sidebar1</div>
+        <div class="maincontent">maincontent</div>
+        <div class="siderbar2">sidebar2</div>
+        <div class="footer">footer</div>
+    </div> 
+
+
+
+    <div class="outerbox">
+
+         <div class="box box1">1</div>
+         <div class="box box2">2</div>
+         <div class="box box3">3</div>
+         <div class="box box4">4</div>
+         <div class="box box5">5</div>
+         <div class="box">6</div>
+         <div class="box">7</div>
+         <div class="box">8</div>
+         <div class="box">9</div>
+         <div class="box">10</div>
+    </div>
+    <div class="container">
+        <div class="para">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quo maiores commodi vero neque itaque nemo a, facilis hic facere in dicta distinctio recusandae eum omnis quibusdam voluptas iste mollitia obcaecati unde repellendus, temporibus nihil molestias deleniti. Sequi voluptatum repellendus, odio amet ipsa sed ullam saepe aspernatur, debitis voluptatibus eos!</p>
+    </div>
+    <div class="para">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quo maiores commodi vero neque itaque nemo a, facilis hic facere in dicta distinctio recusandae eum omnis quibusdam voluptas iste mollitia obcaecati unde repellendus, temporibus nihil molestias deleniti. Sequi voluptatum repellendus, odio amet ipsa sed ullam saepe aspernatur, debitis voluptatibus eos!</p>
+    </div>
+    <div class="para">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quo maiores commodi vero neque itaque nemo a, facilis hic facere in dicta distinctio recusandae eum omnis quibusdam voluptas iste mollitia obcaecati unde repellendus, temporibus nihil molestias deleniti. Sequi voluptatum repellendus, odio amet ipsa sed ullam saepe aspernatur, debitis voluptatibus eos!</p>
+    </div>
+    <div class="para">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quo maiores commodi vero neque itaque nemo a, facilis hic facere in dicta distinctio recusandae eum omnis quibusdam voluptas iste mollitia obcaecati unde repellendus, temporibus nihil molestias deleniti. Sequi voluptatum repellendus, odio amet ipsa sed ullam saepe aspernatur, debitis voluptatibus eos!</p>
+    </div>
+    <div class="para">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quo maiores commodi vero neque itaque nemo a, facilis hic facere in dicta distinctio recusandae eum omnis quibusdam voluptas iste mollitia obcaecati unde repellendus, temporibus nihil molestias deleniti. Sequi voluptatum repellendus, odio amet ipsa sed ullam saepe aspernatur, debitis voluptatibus eos!</p>
+    </div>
+    <div class="para">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quo maiores commodi vero neque itaque nemo a, facilis hic facere in dicta distinctio recusandae eum omnis quibusdam voluptas iste mollitia obcaecati unde repellendus, temporibus nihil molestias deleniti. Sequi voluptatum repellendus, odio amet ipsa sed ullam saepe aspernatur, debitis voluptatibus eos!</p>
+    </div>
+    <div class="para">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quo maiores commodi vero neque itaque nemo a, facilis hic facere in dicta distinctio recusandae eum omnis quibusdam voluptas iste mollitia obcaecati unde repellendus, temporibus nihil molestias deleniti. Sequi voluptatum repellendus, odio amet ipsa sed ullam saepe aspernatur, debitis voluptatibus eos!</p>
+    </div>
+    <div class="para">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quo maiores commodi vero neque itaque nemo a, facilis hic facere in dicta distinctio recusandae eum omnis quibusdam voluptas iste mollitia obcaecati unde repellendus, temporibus nihil molestias deleniti. Sequi voluptatum repellendus, odio amet ipsa sed ullam saepe aspernatur, debitis voluptatibus eos!</p>
+    </div>
+    <div class="para">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quo maiores commodi vero neque itaque nemo a, facilis hic facere in dicta distinctio recusandae eum omnis quibusdam voluptas iste mollitia obcaecati unde repellendus, temporibus nihil molestias deleniti. Sequi voluptatum repellendus, odio amet ipsa sed ullam saepe aspernatur, debitis voluptatibus eos!</p>
+    </div>
+</div>
+</body>
+</html>
