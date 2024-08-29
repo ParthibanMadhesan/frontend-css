@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: serif;
+        }
+        .bar{
+            height: 300px;
+            width: 100%;
+            background-image: url("images/realestateimg.jpeg");
+            background-size: cover;
+            background-position: center;
+            padding-top:10px;
+        }
+        nav{
+            display:flex;
+             align-items: center;
+             justify-content:space-between;
+             padding: 10px 80px;
+             border-radius: 30px;
+             margin: 0px 50px;
+        }
+        nav ul li{
+            list-style-type: none;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 40px;
+            
+        }
+        nav ul li a{
+            border: 1px solid rgb(146, 137, 137);
+            padding: 5px;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            
+        }
+        nav ul li a:hover{
+            background-color: white;
+            color:black;
+        }
+     
+        .nnn{
+            color: white;
+            border:1px solid rgb(146, 137, 137);
+            padding: 5px;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        h3:hover{
+            background-color: white;
+            color:black;
+        }
+
+        .head{
+           margin-top: 100px;
+           text-align: center;
+           color: white;
+        }
+        .second{
+            display: block;
+        }
+        .second .attrative{
+            color: rgb(6, 53, 6);
+            margin-left: 20px;
+         
+           
+
+        }
+       .second .attrative h1{
+            font-size: 70px;
+            margin-left: 90px;
+            margin-top: 50px;
+            float: left
+            
+           
+        }
+        /* .order{
+            font-size: 70px;
+        } */
+        .second button{
+            background-color: rgb(14, 59, 14);
+           padding: 20px;
+           border:1px solid white;
+           border-radius: 100%;
+           margin-top: 50px;
+           margin-right: 200px;
+         float: right;
+        font-size: 80px;
+        }
+
+        .second::after{
+        content: "";
+        clear: both;
+        display: block;
+      
+        }
+
+       .bar2 .navitem{
+        
+            display:flex;
+             align-items: center;
+             justify-content:space-evenly;
+             
+             
+       }
+      .bar2 .navitem ul li{
+       
+   
+
+      }
+      .bar2 .navitem ul li a{
+        color: black;
+        border: 1px solid wheat;
+        padding: 5px 20px;
+        border-radius: 20px;
+        margin-top: 10px;
+        text-align: center;
+        display: block;
+      }
+      
+      .bar2 .navitem ul li a:hover{
+       
+        background-color: darkslategray;
+        color:white;
+      }
+      .section .subsection1 img{
+            width: 40%;
+            height: 260px;
+            margin: 10px 70px;
+            float: left;
+            border-radius: 40px;
+      }
+      .section .subsection2 p h1 {
+            float:right;
+      }
+     section::after{
+        content: "";
+        clear: both;
+        display: block;
+      }
+
+      .section2 .subsectionn1 h1 {
+        width: 50%;
+        margin-left: 80px;
+        font-size: 50px;
+        float: left;
+        margin-left: 40px;
+        margin-top: 40px;
+        
+    }
+    .section2 .subsectionn2 p  {
+        width: 25%;
+        float: right;
+        margin-right: 50px;
+        margin-top: -60px;
+       
+
+       
+        
+    }
+    .section2 ::after{
+        content: "";
+        clear: both;
+        display: block;
+    }
+   
+   .container{
+      margin-top: 100px;
+        display:flex;
+        align-items: center;
+        justify-content:space-around;
+        flex-wrap: wrap;
+       
+       
+        
+
+    }
+    .card{
+       width: 200px;
+       height: 300px; 
+       margin: 10px;
+       background-color: rgb(219, 210, 210);
+       border-radius: 30px;
+
+    }
+      
+    .card-image{
+
+       background-image: url("images/download.jpeg");
+       background-size: cover;
+      background-position: center;
+       border-top-left-radius: 30px;
+       border-top-right-radius: 30px;
+       height: 150px;
+       margin-bottom: 20px;
+    }
+
+    .card ul li{
+        display: inline-flex;
+        padding: 3px;
+        color: rgb(141, 129, 129);
+
+
+    }
+    .card ul li a{
+      text-decoration: none;
+      color: white;
+
+    }
+    .card h4{
+        margin-top: 3px;
+        margin-left: 5px;
+        
+        color: bold;
+    }
+    .card button{
+        border: 1px solid wheat;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: white;
+        float: right;
+        margin-right: 5px;
+        margin-top: 20px;
+    }
+    .card b{
+        float: left;
+        color: black ;
+        margin-top: 20px;
+        margin-left: 10px;
+        font-weight: 800;
+    }
+    .card button::after{
+        content: "";
+        clear: right;
+        display: block; 
+      
+    }
+    .container1{
+        margin-top: 30px;
+      
+         
+        
+    }.container1 .mirrorimage{
+         display:flex;
+         margin-left: 30px;
+         margin-left: 30px;
+        align-items: center;
+        justify-content:space-around;
+        position: relative; 
+        
+        
+    }
+    .container1 .mirrorimage img{
+        width: 300px;
+        height: 300px;
+        z-index: 2;
+        
+         /* margin:  0px 90px ; */
+            
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+
+
+    }.container1 .nearfoot{
+        display:flex;
+       
+         margin-top: -100px;
+         position: relative; 
+         background-color: rgb(39, 61, 39);
+       
+         padding: 50px;
+        
+         
+        align-items: center;
+        justify-content:space-around;
+      
+    }
+    .container1 .nearfoot h1{
+        font-size: 60px;
+       margin-top: 100px;
+       color: white;
+
+    }
+    .container3{
+        height: 300px;
+            width: 100%;
+            background-image: url(images/adventure.jpeg);
+            background-size: cover;
+            background-position: center;
+            margin-top: 50px;
+            border-radius: 200px;
+    }
+    .container3 .context {
+        text-align: center;
+        color:rgb(209, 207, 207);
+    }
+
+   .context p{
+        margin-top: 50px;
+        
+    }
+    @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                padding: 10px 20px;
+            }
+            nav ul li {
+                padding: 10px 10px;
+            }
+            .second .attrative h1 {
+                font-size: 40px;
+            }
+            .second button {
+                font-size: 50px;
+            }
+            .container {
+               
+                flex-direction:row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+            .card {
+              
+                width: 200px;
+                height: 300px;
+            }
+            .container1 .mirrorimage {
+             flex-direction: column;
+            margin-left: 30px;
+            margin-top: 50px;
+            align-items: center;
+           justify-content:space-around;
+           position: relative; 
+        
+        
+    }
+        }
+        @media (max-width: 480px) {
+            .head {
+                margin-top: 50px;
+                font-size: 30px;
+            }
+            .second .attrative h1 {
+                font-size: 30px;
+            }
+            .second button {
+                font-size: 40px;
+            }
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .card {
+                width: 50%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="bar">
+        <nav>
+
+            <h3 class="nnn">parthiban</h3>
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">service</a></li>
+                <li><a href="">details</a></li>
+                <li><a href="">galary</a></li>
+                <li><a href="">galary</a></li>
+            </ul>
+            <a href="">menu</a>
+        </nav>
+          <h1 class="head"> haeding</h1>    
+    </div>
+     
+    <div class="second">
+        <div class="attrative">
+        
+            <h1>GIVE THE BEST<br>
+                  <span style="margin-left: 80px;">JUST FOR YOU</span> 
+                </h1>
+       
+         
+         </div>
+         <button type="submit" class="btn-bg"><i class="fa fa-play"></i></button>
+
+    </div>
+
+    <div class="bar2">
+          <nav class="navitem"> 
+              <ul>
+                <li><a href="">navbar alignmet</a></li>
+                <li><a href="">navbar alignmet</a></li>
+                <li><a href="">navbar alignmet</a></li>
+                <li><a href="">navbar alignmet</a></li>
+                <li><a href="">navbar alignmet</a></li>
+                <li><a href="">navbar alignmet</a></li>
+                <li><a href="">navbar alignmet</a></li>
+              </ul>
+            </nav>
+
+    </div>
+  
+    <div class="section"> 
+
+        <div class="subsection1">
+        
+        <img src="images/download.jpeg" alt="no image" class="fffd">
+       </div>
+       <div class="subsection2"> 
+
+       <h1 style="margin-top: 30px;color:rgb(5, 43, 5)">Font Awesome Video Player Icons</h1>
+       <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nihil. Provident eum magni quisquam id? Illum excepturi commodi harum tempora ea, sunt, similique veniam corrupti  sunt, similique veniam corruptitenetur ut perspiciatis obcaecati molestiae sint dolorem, exercitationem quae velit cumque atque impedit laboriosam deleniti sequi repudiandae dolorum. Quos eum reprehenderit veniam fugit excepturi ipsum.</p>
+       
+       <hr style="margin-top: 20px; ">
+        <h1 style="margin-top: 30px;color:rgb(3, 39, 3); ">Font Awesome Video Player Icons</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nihil. Provident eum magni quisquam id? Illum excepturi commodi harum tempora ea, sunt,commodi harum tempora ea, sunt, similique veniam corrupti tenetur ut perspiciatis obcaecati molestiae sint dolorem, exercitationem quae velit cumque atque impedit laboriosam deleniti sequi repudiandae dolorum. Quos eum reprehenderit veniam fugit excepturi ipsum.</p>
+        <br>
+
+    </div>
+    </div>
+
+
+    <div class="section2">
+         <div class="subsectionn1">
+          <h1>YOUR DREAMS IN LUXURY <br> <span style ="margin-left:40px;">HOTELS ROOMS</span></h1>
+        </div>
+
+          <div class="subsectionn2">
+           <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nesciunt delectus doloribus commodi lus<br>
+           <a href="view all">view all</a>
+          </p>
+         </div>
+
+    </div>
+
+
+
+ <section class="container">
+
+    <div class="card">
+        <div class="card-image"></div>
+        <ul>
+            <li><a href="">hfefjf </a></li>
+            <li><a href="">hfefjf</a></li>
+            <li><a href="">hfefjf</a></li>
+        </ul>
+        <h4>dkdsdd</h4>
+        <b>$100</b>  
+        <button><a href="">dhwkdjwdlw</a></button>
+        
+    </div>
+
+    <div class="card">
+        <div class="card-image"></div>
+        <ul>
+            <li><a href="">hfefs</a></li>
+            <li><a href="">hfefs</a></li>
+            <li><a href="">hfefs</a></li>
+        </ul>
+        <h4>dkdsdd</h4>
+        <b>$100</b>  
+        <button><a href="">dhwkdjwdlw</a></button>
+        
+    </div>
+    <div class="card">
+        <div class="card-image"></div>
+        <ul>
+            <li><a href="">hfefj</a></li>
+            <li><a href="">hfefj</a></li>
+            <li><a href="">hfefj</a></li>
+        </ul>
+        <h4>dkdsdd</h4>
+        <b>$100</b>  
+        <button><a href="">dhwkdjwdlw</a></button>
+        
+    </div>
+
+    <div class="card">
+        <div class="card-image"></div>
+        <ul>
+            <li><a href="">hfefjfkfk</a></li>
+            <li><a href="">hfefjfkfk</a></li>
+            <li><a href="">hfefjfkfk</a></li>
+        </ul>
+        <h4>dkdsdd</h4>
+        <b>$100</b>  
+        <button><a href="">dhwkdjwdlw</a></button>
+        
+    </div>
+ </section>
+ <section class="container1">
+           <div class="mirrorimage">
+              <img src="images/download.jpeg" alt=""> 
+              <img src="images/download.jpeg" alt="">
+              <img src="images/download.jpeg" alt="">
+        </div>
+        <div class="nearfoot">
+            <h1>with your experience <br>will serve you</h1>
+            <div>
+            <h1>
+                800+
+            </h1>
+            <p>skip</p>
+        </div>
+        <div>
+            <h1>
+                3500+
+            </h1>
+            <p>subscribe</p>
+        </div>
+        <div>
+            <h1>
+               2M+
+            </h1>
+            <p>views</p>
+        </div>
+        </div>
+
+ </section>
+
+ <div class="container3">
+    <div class="context" style="margin-top: 50px;">
+        <p style="padding-top: 110px;">stories discoveries</p>
+        <h1 style="">signup for exclusive offer from us</h1>
+        <p>svdsdhsddjsldkdlsdk</p> 
+    </div>
+ </div>
+
+    
+</body>
+</html>
