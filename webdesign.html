@@ -36,18 +36,20 @@
             text-decoration: none;
             display: inline-block;
             padding: 10px 40px;
-            
+
         }
         nav ul li a{
             border: 1px solid rgb(146, 137, 137);
             padding: 5px;
+            background-color:rgb(196, 191, 191);
             border-radius: 8px;
             color: white;
             text-decoration: none;
             
         }
+        
         nav ul li a:hover{
-            background-color: white;
+            background-color: rgb(243, 232, 232);
             color:black;
         }
      
@@ -67,7 +69,8 @@
         .head{
            margin-top: 100px;
            text-align: center;
-           color: white;
+           color: rgb(243, 238, 238);
+           font-size: 50px;
         }
         .second{
             display: block;
@@ -198,8 +201,7 @@
     }
       
     .card-image{
-
-       background-image: url("images/download.jpeg");
+        
        background-size: cover;
       background-position: center;
        border-top-left-radius: 30px;
@@ -207,6 +209,15 @@
        height: 150px;
        margin-bottom: 20px;
     }
+    .card-image img{
+        
+        background-size: cover;
+       background-position: center;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        height: 150px;
+        margin-bottom: 20px;
+     }
 
     .card ul li{
         display: inline-flex;
@@ -312,6 +323,22 @@
         margin-top: 50px;
         
     }
+    .container4{
+        margin-top:30px;
+        display:grid;
+         grid-template-columns: repeat(4,1fr);
+         column-gap:50px;
+         margin-bottom: 20px;
+         
+    }
+    .container4 ul>li{
+        list-style-type: none;
+        padding:10px 90px;
+        font-weight:bold;
+        
+
+    }
+
     @media (max-width: 768px) {
             nav {
                 flex-direction: column;
@@ -347,7 +374,23 @@
            position: relative; 
         
         
+    }.container4{
+        margin-top:30px;
+        display:grid;
+         grid-template-columns: repeat(2,1fr);
+         column-gap:50px;
+         margin-bottom: 20px;
+         row-gap: 30px;
+
     }
+    .container4 ul>li{
+        list-style-type: none;
+        padding:10px 90px;
+        font-weight:bold;
+        
+
+    }
+    
         }
         @media (max-width: 480px) {
             .head {
@@ -367,6 +410,22 @@
             .card {
                 width: 50%;
             }
+            .container4{
+        margin-top:30px;
+        display:grid;
+         grid-template-columns: repeat(2,1fr);
+         column-gap:50px;
+         margin-bottom: 20px;
+         row-gap: 30px;
+
+    }
+    .container4 ul>li{
+        list-style-type: none;
+        padding:10px 90px;
+        font-weight:bold;
+        
+
+    }
         }
 
     </style>
@@ -430,7 +489,7 @@
        
        <hr style="margin-top: 20px; ">
         <h1 style="margin-top: 30px;color:rgb(3, 39, 3); ">Font Awesome Video Player Icons</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nihil. Provident eum magni quisquam id? Illum excepturi commodi harum tempora ea, sunt,commodi harum tempora ea, sunt, similique veniam corrupti tenetur ut perspiciatis obcaecati molestiae sint dolorem, exercitationem quae velit cumque atque impedit laboriosam deleniti sequi repudiandae dolorum. Quos eum reprehenderit veniam fugit excepturi ipsum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, narum tempora ea, sunt,commodi harum tempora ea, sunt, similique veniam corrupti tenetur ut perspiciatis obcaecati molestiae sint dolorem, exercitationem quae velit cumque atque impedit laboriosam deleniti sequi repudiandae dolorum. Quos eum reprehenderit veniam fugit excepturi ipsum.</p>
         <br>
 
     </div>
@@ -455,7 +514,7 @@
  <section class="container">
 
     <div class="card">
-        <div class="card-image"></div>
+        <div class="card-image"><img src="images/room1.jpeg" alt=""></div>
         <ul>
             <li><a href="">hfefjf </a></li>
             <li><a href="">hfefjf</a></li>
@@ -468,7 +527,7 @@
     </div>
 
     <div class="card">
-        <div class="card-image"></div>
+        <div class="card-image"><img src="images/room1.jpeg" alt=""></div>
         <ul>
             <li><a href="">hfefs</a></li>
             <li><a href="">hfefs</a></li>
@@ -480,7 +539,7 @@
         
     </div>
     <div class="card">
-        <div class="card-image"></div>
+        <div class="card-image"><img src="images/room1.jpeg" alt=""> </div>
         <ul>
             <li><a href="">hfefj</a></li>
             <li><a href="">hfefj</a></li>
@@ -493,7 +552,7 @@
     </div>
 
     <div class="card">
-        <div class="card-image"></div>
+        <div class="card-image"><img src="images/room1.jpeg" alt=""></div>
         <ul>
             <li><a href="">hfefjfkfk</a></li>
             <li><a href="">hfefjfkfk</a></li>
@@ -507,13 +566,13 @@
  </section>
  <section class="container1">
            <div class="mirrorimage">
-              <img src="images/download.jpeg" alt=""> 
-              <img src="images/download.jpeg" alt="">
-              <img src="images/download.jpeg" alt="">
+              <img src="images/room1.jpeg" alt=""> 
+              <img src="images/room2.jpeg" alt="">
+              <img src="images/room1.jpeg" alt="">
         </div>
         <div class="nearfoot">
             <h1>with your experience <br>will serve you</h1>
-            <div>
+        <div>
             <h1>
                 800+
             </h1>
@@ -542,7 +601,33 @@
         <p>svdsdhsddjsldkdlsdk</p> 
     </div>
  </div>
+ <div class="container4">
+   <ul>
+    <li>about</li>
+    <li>about us</li>
+    <li>clearnce</li>
+    <li>contact</li>
+   </ul>
 
+   <ul>
+    <li>research</li>
+    <li>fall season</li>
+    <li>fall season</li>
+    <li>fall season</li>
+   </ul>
+
+   <ul>
+    <li>openinghours</li>
+    <li style="font-weight: 100; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: small;">monday 5-9pm</li>
+    <li style="font-weight: 100; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: small;">monday 5-9pm</li>
+    <li style="font-weight: 100; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: small;">monday 5-9pm</li>
+   </ul>
+   <ul>
+    <li>Address</li>
+    <li style="font-weight: 200;"><small><address> dharmaouri tamilnadu india 636806</address><small></li>
     
+   </ul>
+ </div>
+
 </body>
 </html>
