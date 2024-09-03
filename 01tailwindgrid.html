@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+<style>
+  /* In your CSS file */
+.btn-primary {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700;
+}
+
+</style>
+
+</head>
+<body>
+    <div class="grid grid-cols-3 gap-4">
+        <div class="bg-blue-500 p-4">Item 1</div>
+        <div class="bg-green-500 p-4">Item 2</div>
+        <div class="bg-red-500 p-4">Item 3</div>
+      </div>
+      back /* In your CSS file */
+        <div class="bg-blue-500 p-4 ">Box 2</div>
+        <div class="bg-blue-600 p-4 ">Box 3</div>
+      </div>
+
+      <form class="space-y-4">
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+          <input type="text" id="name" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+          <input type="email" id="email" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+        </div>
+        <div>
+          <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Submit</button>
+        </div>
+      </form>
+      
+      <div class="shadow-lg p-4">
+        Shadowed Box
+      </div>
+
+      <div class="border border-gray-300 rounded-lg p-4">
+        Bordered Box
+      </div>
+      <div class="text-sm md:text-lg lg:text-xl">
+        Responsive Text
+      </div>
+
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Hover Me
+      </button>
+      
+      <div class="container mx-auto p-4">
+        <header class="bg-blue-500 text-white p-6">
+          <h1 class="text-2xl">My Website</h1>
+        </header>
+        <main class="mt-4">
+          <p class="text-lg">
+            Welcome to my website. This is an example of using Tailwind CSS.
+          </p>
+        </main>
+        <footer class="mt-8 p-4 text-center text-gray-600">
+          © 2024 My Website
+        </footer>
+      </div>
+      
+
+      <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="text-white font-bold">Brand</div>
+          <ul class="hidden md:flex space-x-4 text-white">
+            <li><a href="#" class="hover:text-gray-400">Home</a></li>
+            <li><a href="#" class="hover:text-gray-400">About</a></li>
+            <li><a href="#" class="hover:text-gray-400">Services</a></li>
+            <li><a href="#" class="hover:text-gray-400">Contact</a></li>
+          </ul>
+          <div class="md:hidden text-white">
+            <button class="focus:outline-none">
+              <!-- SVG for a hamburger menu -->
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="animate-bounce bg-blue-500 p-4 m-20">
+        Bouncing Box
+      </div>
+
+      <div class="animate-spin-slow bg-green-500 p-4">
+        Slow Spinning Box
+      </div>
+
+      <div class="transform hover:scale-110 transition duration-500 ease-in-out bg-blue-500 p-4 m-20">
+        Hover to Scale
+      </div>
+      
+      <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+        Responsive Heading
+      </h1>
+      
+      <div class="grid grid-cols-3 grid-flow-row-dense gap-4">
+        <div class="bg-blue-500 col-span-2">Large Item</div>
+        <div class="bg-green-500">Small Item 1</div>
+        <div class="bg-red-500">Small Item 2</div>
+        <div class="bg-yellow-500 col-span-2">Large Item 2</div>
+      </div>
+      <div class="mt-[3.75rem] text-[bg-yellow-500]">
+        Custom Margin and Color
+      </div>
+      <button class="btn-primary">
+        Click Me
+      </button>
+      
+
+
+</body>
+</html>

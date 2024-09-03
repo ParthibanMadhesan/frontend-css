@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<details style="font-size: 50px;">
+    <summary>Readmore</summary>
+    <p>when click i am visible other wise hidden</p>
+</details>
+
+<p>------------------------------------</p>
+ 
+<input list="browsers" name="browser" id="browser ">
+<datalist id="browsers" >
+    <option value="chrome">
+        <option value="safari"></option>
+        <option value="internet explorer"></option>
+        <option value="edge"></option>
+</datalist>
+
+<p>------------------------------------</p>
+<input type="color">
+<input type="date">
+<input type="range" min="0" max="100">
+<input type="number" min="1" max="10">
+
+<p>------------------------------------</p>
+
+<form oninput="result.value=parseInt(a.value)+ parseInt(b.value)">
+    <input type="range" id="a" value="50">+
+    <input type="number" id="b" value="50">
+    <output name="result" for="a b">100</output>
+</form>
+
+
+<p>------------------------------------</p>
+
+<template id="my-template">
+    <p>TechAlgoSpotlight is Best</p>
+    <img src="images/adventure.jpeg">
+  </template>
+  <script>
+    const template = document.getElementById('my-template');
+    document.body.appendChild(template.content.cloneNode(true));
+  </script>
+<p>------------------</p>
+<progress value="50" max="100">50%</progress><br>
+<meter value="0.6">60%</meter><br>
+Here is an important term: <mark>key concept</mark>.<br>
+<time datetime="2024-08-28">August 28, 2024</time><br>
+The term <abbr title="HyperText Markup Language">HTML</abbr> is essential for web development.<br>
+
+
+<figure>
+    <img src="images/boy.png" alt="An example image">
+    <figcaption>An example image with a caption.</figcaption>
+  </figure>
+
+
+  <section>
+    <h2>Section Title</h2>
+    <p>Content within this section.</p>
+  </section>
+  <article>
+    <h2>Article Title</h2>
+    <p>Content of the article.</p>
+  </article>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+    </ul>
+  </nav>
+
+  <aside>
+    <p>Related content or advertisements go here.</p>
+  </aside>
+
+  <main>
+    <h1>Welcome to TechAlgoSpotlight</h1>
+    <p>This is the main content area of the page.</p>
+  </main>
+</body>
+</html>
